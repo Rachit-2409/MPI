@@ -39,8 +39,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!--AOS-->
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-     <!--Swiper-->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
 </head>
@@ -48,89 +48,118 @@
 <body>
 
     <!--HEADER-->
-    <header>
-        <div class="container header-section ">
+    <div class="menu-overlay" id="menuOverlay"></div>
+    
+    <header id="header">
+        <div class="container header-section">
             <div class="logo">
-                <img src="./assests/Logo.png" alt="">
+                <img src="./assests/Logo.png" alt="Logo">
             </div>
-            <nav>
+            
+            <nav id="navMenu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#Home" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#About" onclick="closeMenu()">About</a></li>
+                    <li><a href="#Services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#Gallery" onclick="closeMenu()">Gallery</a></li>
                 </ul>
             </nav>
+            
             <div class="Contact-header">
-                <div class="mobile-number-box">
-
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <a href="#" class="CTA-primary">CONTACT</a>
+                <a href="#Contact" class="CTA-primary">CONTACT</a>
             </div>
-
         </div>
     </header>
+
     <!--HEADER END-->
 
     <!--HERO-->
-    <section class="hero-wrapper unipadding">
-        <div class="hero-section container">
-            <div class="text-box">
-                <h1>Welcome to Maa Parvati Infrastructure</h1>
-                <h3>Your Trusted Partner for Construction & Real Estate Excellence in Bhopal</h3>
-            </div>
-            <div class="moving-text">
-                <p data-aos="fade-up">Home Builder</p>
-            </div>
+    <section class="hero-wrapper unipadding" id="Home">
+    <div class="hero-section container">
+        <div class="text-box">
+            <h1>Welcome to Maa Parvati Infrastructure</h1>
+            <h3>Your Trusted Partner for Construction & Real Estate Excellence in Bhopal</h3>
         </div>
-    </section>
+    </div>
+
+    <!-- Keep this outside container -->
+    <div class="moving-text">
+        <p data-aos="fade-up">Home Builder</p>
+    </div>
+</section>
+
     <!--HERO END-->
 
 
     <!--About-->
-    <section class="about-wrapper unipadding">
-        <div class="about-section container">
-            <h3>Maa Parvati Infrastructure is a multidisciplinary construction and real estate service provider offering
-                a wide range of solutions tailored to meet the evolving needs of residential, commercial, and government
-                clients.</h3>
-            <h3>With a dedicated team of engineers, supervisors, architects, interior designers, real estate advisors,
-                and project managers, we ensure every project is completed with unmatched precision and professionalism.
-            </h3>
-            <div class="about-image-carasoul">
-                <div class="about-image-link">
-                    <div class="about-link active" onclick=(about_image_change(1,event))>
-                        Smart engineering & planning
-                    </div>
-                    <div class="about-link" onclick=(about_image_change(2,event))>
-                        Quality material selection
-                    </div>
-                    <div class="about-link" onclick=(about_image_change(3,event))>
-                        Expert supervision
-                    </div>
-                    <div class="about-link" onclick=(about_image_change(4,event))>
-                        Timely delivery
-                    </div>
-                    <div class="about-link" onclick=(about_image_change(5,event))>
-                        Cost-effective solutions
-                    </div>
-                    <div class="about-link" onclick=(about_image_change(6,event))>
-                        Transparent processes
-                    </div>
-                    <img src="./assests/about1.jpg" alt="" class="mobile-about-img">
+  <!-- About -->
+<section class="about-wrapper unipadding" id="About">
+    <div class="about-section container">
+
+        <h3>Maa Parvati Infrastructure is a multidisciplinary construction and real estate service provider offering
+            a wide range of solutions tailored to meet the evolving needs of residential, commercial, and government
+            clients.</h3>
+
+        <h3>With a dedicated team of engineers, supervisors, architects, interior designers, real estate advisors,
+            and project managers, we ensure every project is completed with unmatched precision and professionalism.
+        </h3>
+
+        <div class="about-image-carousel">
+
+            <!-- Left Side (Text Links + Mobile Image) -->
+            <div class="about-links-wrapper">
+
+                <div class="about-link active" onclick="about_image_change(1, event)">
+                    Smart engineering & planning
                 </div>
-                <div class="about-image-box">
-                    <img src="./assests/about1.jpg" alt="">
+
+                <div class="about-link" onclick="about_image_change(2, event)">
+                    Quality material selection
                 </div>
+
+                <div class="about-link" onclick="about_image_change(3, event)">
+                    Expert supervision
+                </div>
+
+                <div class="about-link" onclick="about_image_change(4, event)">
+                    Timely delivery
+                </div>
+
+                <div class="about-link" onclick="about_image_change(5, event)">
+                    Cost-effective solutions
+                </div>
+
+                <div class="about-link" onclick="about_image_change(6, event)">
+                    Transparent processes
+                </div>
+
+                <!-- MOBILE IMAGE (hidden on desktop) -->
+                <div class="about-image-box-mob">
+                    <img id="about-image" src="./assests/about1.jpg" alt="">
+                </div>
+
+            </div>
+
+            <!-- Desktop Image -->
+            <div class="about-image-box">
+                <img src="./assests/about1.jpg" alt="">
             </div>
 
         </div>
-    </section>
+
+    </div>
+</section>
 
     <section class="more-info-wrapper unipadding">
         <div class="more-info-section container">
             <div class="row">
                 <div class="col-lg-6 d-flex justify-content-center justify-content-center">
-                    <img src="./assests/more-info.png" alt="" class="img-fluid" style="max-width: 450px;">
+                    <img src="./assests/more-info.png" alt="" class="img-fluid" >
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <p>Maa Parvati Infrastructure is a leading name in construction, infrastructure development,
@@ -150,19 +179,27 @@
     </section>
 
     <section class="strength-wrapper unipadding">
-        <div class="strenght-section container d-flex flex-column align-items-start">
-            <h3>Our Company Strengths</h3>
-            
-                        <p>Over a decade of combined experience</p>
-                         <p>Strong portfolio of government and private projects</p>
-                         <p>Skilled workforce and modern machinery</p>
-                         <p>Reliable vendor and material network</p>
-                         <p>Customer-first and ethical business practices</p>
-                   
+        <div class="strenght-section container ">
+            <div class="row">
+                <div class="col-lg-8 d-flex flex-column align-items-start">
+                    <h3>Our Company Strengths</h3>
+
+                    <p>Over a decade of combined experience</p>
+                    <p>Strong portfolio of government and private projects</p>
+                    <p>Skilled workforce and modern machinery</p>
+                    <p>Reliable vendor and material network</p>
+                    <p>Customer-first and ethical business practices</p>
+
+                </div>
+                <div class="col-lg-4">
+                    <img src="./assests/strength.jpg" alt="" class="strengh-image">
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section class="services-wrapper unipadding">
+    <section class="services-wrapper unipadding" id="Services">
         <div class="services-section container">
             <h3>Our Services</h3>
             <div class="service-box">
@@ -209,25 +246,93 @@
 
     </section>
 
+    <div class="Gallery-wrapper unipadding" id="Gallery">
+        <div class="Gallery-section container">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assests/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assests/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assests/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assests/4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assests/5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assests/6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assests/7.jpg" alt=""></div>
 
-    <section class="gallery-wrapper p-5">
-        <div class="gallery-section">
-               <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./assests/1.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="./assests/2.jpg" alt="" srcset=""></div>
-      <div class="swiper-slide"><img src="./assests/3.jpg" alt="" srcset=""></div>
-      <div class="swiper-slide"><img src="./assests/4.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="./assests/5.jpg" alt="" srcset=""></div>
-      <div class="swiper-slide"><img src="./assests/6.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="./assests/7.jpg" alt=""></div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
+
+     <section class="contact-wrapper unipadding" id="Contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&q=80" 
+                             alt="Contact us" 
+                             class="contact-image">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-form-container">
+                            <form onsubmit="handleSubmit(event)">
+                                <div class="form-heading">
+                                    <h2>Get In Touch</h2>
+                                    <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                                </div>
+                                
+                                <input type="text" placeholder="Your Name" required>
+                                <input type="email" placeholder="Your Email" required>
+                                <input type="tel" placeholder="Your Mobile" required>
+                                <textarea placeholder="Enter Your Message" required></textarea>
+                                
+                                <button type="submit" class="submit-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>Maa Parvati Infrastructure</h2>
+            <p>We Build Trust Through Quality Construction, Interiors & Real Estate Services.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>Flat No. 372/4, Sharad Homes, 1st Floor, Rachna Nagar,<br>
+            Near Under Bridge, Bhopal (M.P.) – 462023</p>
+            <p><strong>Phone:</strong> +91 9131286898<br>+91 7415685902</p>
+            <p><strong>Email:</strong> maaparvatiinfra@gmail.com</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Maa Parvati Infrastructure. All Rights Reserved.</p>
+        <p>Designed & Developed by <strong>NAMEY INDIA</strong></p>
+    </div>
+</footer>
+
 
 
 
@@ -244,19 +349,41 @@
         AOS.init();
     </script> -->
     <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 5,
-      centeredSlides: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 15,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            mousewheel: true,
+            keyboard: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 15
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            }
+        });
     </script>
 
 </body>
