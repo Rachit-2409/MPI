@@ -38,7 +38,7 @@
     <!--Google Icons-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!--AOS-->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Swiper-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -158,10 +158,10 @@
     <section class="more-info-wrapper unipadding">
         <div class="more-info-section container">
             <div class="row">
-                <div class="col-lg-6 d-flex justify-content-center justify-content-center">
+                <div class="col-lg-6 d-flex justify-content-center justify-content-center" data-aos="fade-right">
                     <img src="./assests/more-info.png" alt="" class="img-fluid" >
                 </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-left">
                     <p>Maa Parvati Infrastructure is a leading name in construction, infrastructure development,
                         interior designing, and complete real estate solutions in Bhopal (M.P.).</p>
                     <p>With a mission to deliver high-quality, reliable, and transparent services, we have built a
@@ -181,7 +181,7 @@
     <section class="strength-wrapper unipadding">
         <div class="strenght-section container ">
             <div class="row">
-                <div class="col-lg-8 d-flex flex-column align-items-start">
+                <div class="col-lg-8 d-flex flex-column align-items-start" data-aos="fade-left">
                     <h3>Our Company Strengths</h3>
 
                     <p>Over a decade of combined experience</p>
@@ -191,7 +191,7 @@
                     <p>Customer-first and ethical business practices</p>
 
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-right">
                     <img src="./assests/strength.jpg" alt="" class="strengh-image">
                 </div>
             </div>
@@ -202,40 +202,40 @@
     <section class="services-wrapper unipadding" id="Services">
         <div class="services-section container">
             <h3>Our Services</h3>
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-up">
                 <h3>Construction & Infrastructure Development</h3>
                 <p>We handle construction projects of all sizes, including homes, duplexes, commercial buildings,
                     offices, and industrial structures.Our work follows strict quality standards to ensure long-lasting
                     strength and a visually appealing finish.</p>
             </div>
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-up">
                 <h3>Government Civil Works</h3>
                 <p>We execute government-approved civil projects with proper documentation, tender-based processes, and
                     full safety compliance.
                     Our major works include trunking room upgrades, office renovations, conference hall improvements,
                     and civil–electrical work under M.P. Police Housing & Infrastructure.</p>
             </div>
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-up">
                 <h3>Interior Designing & Turnkey Execution</h3>
                 <p>We create interior spaces that blend style, comfort, and functionality.
                     From modular kitchens and wardrobes to false ceilings, lighting, and full home or office interiors —
                     we design modern, elegant spaces that match your needs.</p>
             </div>
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-up">
                 <h3>Real Estate Consultation (Buy, Sell, Rent)</h3>
                 <p>Whether you're buying, selling, or renting property in Bhopal, we offer verified listings, fair
                     pricing, and complete documentation support.
                     We deal in residential plots, flats, duplexes, commercial shops, offices, and investment properties.
                 </p>
             </div>
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-up">
                 <h3>Renovation, Remodeling & Repair</h3>
                 <p>Transform your old space with our renovation services such as flooring, tiling, painting, bathroom
                     upgrades, plumbing, electrical work, and structural repairs.
                     We make your space look modern, fresh, and more functional.
                 </p>
             </div>
-            <div class="service-box">
+            <div class="service-box" data-aos="fade-up">
                 <h3>Property Development & Planning</h3>
                 <p>We manage projects from planning to final execution.
                     Our services include layout design, architectural and structural drawings, material procurement,
@@ -246,7 +246,7 @@
 
     </section>
 
-    <div class="Gallery-wrapper unipadding" id="Gallery">
+    <div class="Gallery-wrapper unipadding" id="Gallery" data-aos="fade-up">
         <div class="Gallery-section container">
             <!-- Swiper -->
             <div class="swiper mySwiper">
@@ -272,12 +272,12 @@
         <div class="container">
             <div class="contact-card">
                 <div class="row g-0">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&q=80" 
                              alt="Contact us" 
                              class="contact-image">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-left">
                         <div class="contact-form-container">
                             <form onsubmit="handleSubmit(event)">
                                 <div class="form-heading">
@@ -318,10 +318,10 @@
         <div class="footer-box">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Project">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </div>
 
@@ -343,11 +343,11 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <!--AOS-->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <!--AOS-->
-    <!-- <script>
+     <script>
         AOS.init();
-    </script> -->
+    </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
