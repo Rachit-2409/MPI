@@ -49,13 +49,13 @@
 
     <!--HEADER-->
     <div class="menu-overlay" id="menuOverlay"></div>
-    
+
     <header id="header">
         <div class="container header-section">
             <div class="logo">
                 <img src="./assests/Logo.png" alt="Logo">
             </div>
-            
+
             <nav id="navMenu">
                 <ul>
                     <li><a href="#Home" onclick="closeMenu()">Home</a></li>
@@ -64,7 +64,7 @@
                     <li><a href="#Gallery" onclick="closeMenu()">Gallery</a></li>
                 </ul>
             </nav>
-            
+
             <div class="Contact-header">
                 <div class="mobile-menu-toggle" id="mobileMenuToggle">
                     <span></span>
@@ -80,86 +80,86 @@
 
     <!--HERO-->
     <section class="hero-wrapper unipadding" id="Home">
-    <div class="hero-section container">
-        <div class="text-box">
-            <h1>Welcome to Maa Parvati Infrastructure</h1>
-            <h3>Your Trusted Partner for Construction & Real Estate Excellence in Bhopal</h3>
+        <div class="hero-section container">
+            <div class="text-box">
+                <h1>Welcome to Maa Parvati Infrastructure</h1>
+                <h3>Your Trusted Partner for Construction & Real Estate Excellence in Bhopal</h3>
+            </div>
         </div>
-    </div>
 
-    <!-- Keep this outside container -->
-    <div class="moving-text">
-        <p data-aos="fade-up">Home Builder</p>
-    </div>
-</section>
+        <!-- Keep this outside container -->
+        <div class="moving-text">
+            <p data-aos="fade-up">Home Builder</p>
+        </div>
+    </section>
 
     <!--HERO END-->
 
 
     <!--About-->
-  <!-- About -->
-<section class="about-wrapper unipadding" id="About">
-    <div class="about-section container">
+    <!-- About -->
+    <section class="about-wrapper unipadding" id="About">
+        <div class="about-section container">
 
-        <h3>Maa Parvati Infrastructure is a multidisciplinary construction and real estate service provider offering
-            a wide range of solutions tailored to meet the evolving needs of residential, commercial, and government
-            clients.</h3>
+            <h3>Maa Parvati Infrastructure is a multidisciplinary construction and real estate service provider offering
+                a wide range of solutions tailored to meet the evolving needs of residential, commercial, and government
+                clients.</h3>
 
-        <h3>With a dedicated team of engineers, supervisors, architects, interior designers, real estate advisors,
-            and project managers, we ensure every project is completed with unmatched precision and professionalism.
-        </h3>
+            <h3>With a dedicated team of engineers, supervisors, architects, interior designers, real estate advisors,
+                and project managers, we ensure every project is completed with unmatched precision and professionalism.
+            </h3>
 
-        <div class="about-image-carousel">
+            <div class="about-image-carousel">
 
-            <!-- Left Side (Text Links + Mobile Image) -->
-            <div class="about-links-wrapper">
+                <!-- Left Side (Text Links + Mobile Image) -->
+                <div class="about-links-wrapper">
 
-                <div class="about-link active" onclick="about_image_change(1, event)">
-                    Smart engineering & planning
+                    <div class="about-link active" onclick="about_image_change(1, event)">
+                        Smart engineering & planning
+                    </div>
+
+                    <div class="about-link" onclick="about_image_change(2, event)">
+                        Quality material selection
+                    </div>
+
+                    <div class="about-link" onclick="about_image_change(3, event)">
+                        Expert supervision
+                    </div>
+
+                    <div class="about-link" onclick="about_image_change(4, event)">
+                        Timely delivery
+                    </div>
+
+                    <div class="about-link" onclick="about_image_change(5, event)">
+                        Cost-effective solutions
+                    </div>
+
+                    <div class="about-link" onclick="about_image_change(6, event)">
+                        Transparent processes
+                    </div>
+
+                    <!-- MOBILE IMAGE (hidden on desktop) -->
+                    <div class="about-image-box-mob">
+                        <img id="about-image" src="./assests/about1.jpg" alt="">
+                    </div>
+
                 </div>
 
-                <div class="about-link" onclick="about_image_change(2, event)">
-                    Quality material selection
+                <!-- Desktop Image -->
+                <div class="about-image-box">
+                    <img src="./assests/about1.jpg" alt="">
                 </div>
 
-                <div class="about-link" onclick="about_image_change(3, event)">
-                    Expert supervision
-                </div>
-
-                <div class="about-link" onclick="about_image_change(4, event)">
-                    Timely delivery
-                </div>
-
-                <div class="about-link" onclick="about_image_change(5, event)">
-                    Cost-effective solutions
-                </div>
-
-                <div class="about-link" onclick="about_image_change(6, event)">
-                    Transparent processes
-                </div>
-
-                <!-- MOBILE IMAGE (hidden on desktop) -->
-                <div class="about-image-box-mob">
-                    <img id="about-image" src="./assests/about1.jpg" alt="">
-                </div>
-
-            </div>
-
-            <!-- Desktop Image -->
-            <div class="about-image-box">
-                <img src="./assests/about1.jpg" alt="">
             </div>
 
         </div>
-
-    </div>
-</section>
+    </section>
 
     <section class="more-info-wrapper unipadding">
         <div class="more-info-section container">
             <div class="row">
                 <div class="col-lg-6 d-flex justify-content-center justify-content-center" data-aos="fade-right">
-                    <img src="./assests/more-info.png" alt="" class="img-fluid" >
+                    <img src="./assests/more-info.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-left">
                     <p>Maa Parvati Infrastructure is a leading name in construction, infrastructure development,
@@ -268,28 +268,30 @@
         </div>
     </div>
 
-     <section class="contact-wrapper unipadding" id="Contact">
+    <section class="contact-wrapper unipadding" id="Contact">
         <div class="container">
             <div class="contact-card">
                 <div class="row g-0">
                     <div class="col-lg-6" data-aos="fade-right">
-                        <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&q=80" 
-                             alt="Contact us" 
-                             class="contact-image">
+                        <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&q=80"
+                            alt="Contact us" class="contact-image">
                     </div>
                     <div class="col-lg-6" data-aos="fade-left">
                         <div class="contact-form-container">
-                            <form onsubmit="handleSubmit(event)">
+                            <form onsubmit="handleSubmit(event)" action="https://api.web3forms.com/submit"
+                                method="POST">
                                 <div class="form-heading">
                                     <h2>Get In Touch</h2>
-                                    <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                                    <p>We'd love to hear from you. Send us a message and we'll respond as soon as
+                                        possible.</p>
                                 </div>
-                                
-                                <input type="text" placeholder="Your Name" required>
-                                <input type="email" placeholder="Your Email" required>
-                                <input type="tel" placeholder="Your Mobile" required>
-                                <textarea placeholder="Enter Your Message" required></textarea>
-                                
+                                <input type="hidden" name="access_key" value="3e271e2f-ec44-4fa1-880f-b1445fe8f7d5">
+                                <input type="hidden" name="redirect" value="http://maaparvatiinfra.com/#contact.html">
+                                <input type="text" placeholder="Your Name" required name="name">
+                                <input type="email" placeholder="Your Email" required name="email">
+                                <input type="tel" placeholder="Your Mobile" required name="mobile">
+                                <textarea placeholder="Enter Your Message" required name="message"></textarea>
+
                                 <button type="submit" class="submit-btn">Send Message</button>
                             </form>
                         </div>
@@ -300,38 +302,38 @@
     </section>
 
     <footer class="footer">
-    <div class="footer-container">
+        <div class="footer-container">
 
-        <div class="footer-box">
-            <h2>Maa Parvati Infrastructure</h2>
-            <p>We Build Trust Through Quality Construction, Interiors & Real Estate Services.</p>
+            <div class="footer-box">
+                <h2>Maa Parvati Infrastructure</h2>
+                <p>We Build Trust Through Quality Construction, Interiors & Real Estate Services.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p>Flat No. 372/4, Sharad Homes, 1st Floor, Rachna Nagar,<br>
+                    Near Under Bridge, Bhopal (M.P.) – 462023</p>
+                <p><strong>Phone:</strong> +91 9131286898<br>+91 7415685902</p>
+                <p><strong>Email:</strong> maaparvatiinfra@gmail.com</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Project">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+            `
         </div>
 
-        <div class="footer-box">
-            <h3>Contact Us</h3>
-            <p>Flat No. 372/4, Sharad Homes, 1st Floor, Rachna Nagar,<br>
-            Near Under Bridge, Bhopal (M.P.) – 462023</p>
-            <p><strong>Phone:</strong> +91 9131286898<br>+91 7415685902</p>
-            <p><strong>Email:</strong> maaparvatiinfra@gmail.com</p>
+        <div class="footer-bottom">
+            <p>© 2025 Maa Parvati Infrastructure. All Rights Reserved.</p>
+            <p>Designed & Developed by <strong>NAMEY INDIA</strong></p>
         </div>
-
-        <div class="footer-box">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#Project">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
-`
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2025 Maa Parvati Infrastructure. All Rights Reserved.</p>
-        <p>Designed & Developed by <strong>NAMEY INDIA</strong></p>
-    </div>
-</footer>
+    </footer>
 
 
 
@@ -345,7 +347,7 @@
     <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--AOS-->
-     <script>
+    <script>
         AOS.init();
     </script>
     <!-- Swiper JS -->
